@@ -1,0 +1,41 @@
+@font-face {
+    font-family: 'Kabel_Book_BT';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Kabel_Book_BT'), url('/fonts/Kabel_Book_BT.ttf') format('truetype');
+}
+body {
+    font-family: Kabel_Book_BT;
+    max-height: 100px;
+    -webkit-text-size-adjust:100%;
+}
+h3 {
+    font-family: Kabel_Book_BT;
+}
+
+input#round{
+    width:200px; /*same as the height*/
+    height:200px; /*same as the width*/
+    margin: 0 auto;
+    background-color:#ff0000;
+    border:1px solid #ff0000; /*same colour as the background*/
+    color:#fff;
+    font-size:1.6em;
+    /*set the border-radius at half the size of the width and height*/
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px;
+    /*give the button a small drop shadow*/
+    -webkit-box-shadow: 0 0 10px rgba(0,0,0, .75);
+    -moz-box-shadow: 0 0 10px rgba(0,0,0, .75);
+    box-shadow: 2px 2px 15px rgba(0,0,0, .75);
+}
+/***NOW STYLE THE BUTTON'S HOVER STATE***/
+input#round:hover{
+    background:#c20b0b;
+    border:1px solid #c20b0b;
+    /*reduce the size of the shadow to give a pushed effect*/
+    -webkit-box-shadow: 0px 0px 5px rgba(0,0,0, .75);
+    -moz-box-shadow: 0px 0px 5px rgba(0,0,0, .75);
+    box-shadow: 0px 0px 5px rgba(0,0,0, .75);
+}
